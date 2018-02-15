@@ -1,0 +1,4 @@
+---
+#install ntp package
+- name: Install NTP package
+  yum: name=ntp state=present

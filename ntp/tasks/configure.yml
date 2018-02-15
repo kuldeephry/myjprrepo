@@ -1,0 +1,5 @@
+---
+# copy ntp.conf
+- name: copy ntp.conf
+  copy: src=ntp.conf dest=/etc/ntp.conf
+  notify: restart ntpd service

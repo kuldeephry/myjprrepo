@@ -1,0 +1,8 @@
+---
+# Copy httpd.conf 
+- name: Copy httpd.conf
+  copy: src=httpd.conf dest=/etc/httpd/conf/httpd.conf
+  notify: restart httpd service
+- name: Copy index.html
+  copy: src=index.html dest=/var/www/html/index.html
+

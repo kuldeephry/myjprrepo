@@ -1,0 +1,4 @@
+---
+# Install httpd package
+- name: Install HTTPD Package
+  yum: name=httpd,mod_ssl state=present

@@ -1,0 +1,4 @@
+---
+# staer ntpd service
+- name: starting ntpd service
+  service: name=ntpd state=restarted
